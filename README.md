@@ -65,12 +65,10 @@ Foi identificado que o dataset presente é extremamente assimétrico em alguns c
 | 16 | **Distribuição da Quantidade de Pedidos por Cliente por Estado** | Segmenta a quantidade de clientes por quantidade de pedidos realizados (com porcentagem). |
 | 17 | **Distribuição da Quantidade de Pedidos por Cliente por Estado apenas para Clientes Recorrentes (2 pedidos ou mais)** | Restringe a análise aos clientes fiéis (com 2 ou mais pedidos) para avaliar concentração regional. |
 
-## Detecção de Outliers
+## Outliers
 Outliers são valores atípicos, valores que se diferenciam muito da maioria do restante dos dados. Outliers não necessáriamente erros, mas uma análise sobre estes dados podem ajudar a identificar anomalias que não deveriam existir e estão influenciando nas análises estatísticas dos dados.
 
-Visto que o dataset é extremamente assimétrico, a utilização de técnica baseada em média e desvio padrão talvez não seja a mais recomendada para se obter resultados sobre outliers para este caso. Por isso foi utilizado um valor maior que o normal como escala para definir o que seriam valores discrepantes. 
-
-Estas consultas SQL tem como objetivo identificar e avaliar a dispersão de valores, explorando métricas estatísticas e percentis para detectar padrões em preços e pedidos.
+Visto que o dataset é extremamente assimétrico, a utilização de técnica baseada em média e desvio padrão não é a mais recomendada para buscar outliers reais. Por isso foi utilizado um valor maior como escala para definir o que seriam valores discrepantes. O objetivo análise passa a ser identificar produtos e clientes de alto valor, além explorar métricas estatísticas e percentis em preços e pedidos. 
 
 | # | Título da Consulta | Descrição |
 |:-:|--------------------|------------|
