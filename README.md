@@ -31,7 +31,7 @@ O objetivo é uma sumarização inicial e ter noção do volume e integridade. D
 | 2 | **Maior e menor valor de pedidos** | Identifica o pedido mais caro e o mais barato do histórico de vendas. |
 | 3 | **Total de pedidos e valor total vendido** | Identifica o volume total de pedidos e o faturamento agregado de todo período. |
 
-## Análise Financeira e Temporal
+## Análise Financeira
 Alguns consultas retornam valores gerais que englobam todos os registros históricos e outras são específicas para um recorde no tempo específico.
 | # | Título da Consulta | Descrição |
 |:-:|--------------------|------------|
