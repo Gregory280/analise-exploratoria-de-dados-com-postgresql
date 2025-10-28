@@ -65,6 +65,19 @@ Foi identificado que o dataset presente é extremamente assimétrico em alguns c
 | 16 | **Distribuição da Quantidade de Pedidos por Cliente por Estado** | Segmenta a quantidade de clientes por quantidade de pedidos realizados (com porcentagem). |
 | 17 | **Distribuição da Quantidade de Pedidos por Cliente por Estado apenas para Clientes Recorrentes (2 pedidos ou mais)** | Restringe a análise aos clientes fiéis (com 2 ou mais pedidos) para avaliar concentração regional. |
 
+## Detecção de Outliers
+Outliers são valores atípicos, valores que se diferenciam muito da maioria do restante dos dados. Outliers não necessáriamente erros, mas uma análise sobre estes dados podem ajudar a identificar anomalias que não deveriam existir e estão influenciando nas análises estatísticas dos dados.
+
+Visto que o dataset é extremamente assimétrico, a utilização de técnica baseada em média e desvio padrão talvez não seja a mais recomendada para se obter resultados sobre outliers para este caso. Por isso foi utilizado um valor maior que o normal como escala para definir o que seriam valores discrepantes. 
+
+Estas consultas SQL tem como objetivo identificar e avaliar a dispersão de valores, explorando métricas estatísticas e percentis para detectar padrões em preços e pedidos.
+
+| # | Título da Consulta | Descrição |
+|:-:|--------------------|------------|
+| 18 | **Detectando Outliers em Colunas Numéricas** | Identifica valores atípicos em variáveis numéricas (preço e frete) com base na média e desvio padrão. |
+| 19 | **Detectando Outliers com Base no Valor Total dos Pedidos** | Analisa o valor total de cada pedido para encontrar pedidos fora do padrão |
+| 20 | **Top 0.5% Compradores** | Retorna os pedidos mais caros, correspondendo ao Top 0.5%, para investigar outliers extremos e identificar clientes de alto valor. |
+
 
 ## Fim
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?logo=postgresql&logoColor=white)
